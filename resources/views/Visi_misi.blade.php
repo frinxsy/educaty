@@ -1,4 +1,4 @@
-<h1>Home</h1>
+<h1>Visi Misi</h1>
 {{-- sebelum login --}}
  @guest
     <ol>

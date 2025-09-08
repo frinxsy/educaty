@@ -13,3 +13,18 @@ Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::get('/', function () {
     return view('home');
 });
+
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+
+Route::get('/materi', function () {
+    return view('materi');
+});
+Route::get('/fasilitas', function () {
+    return view('fasilitas');
+});
+Route::get('/about', function () {
+    return view('about');
+});
+Route::get('/visi_misi', function () {
+    return view('visi_misi');
+});

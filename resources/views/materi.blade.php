@@ -1,4 +1,4 @@
-<h1>Home</h1>
+<h1>materi</h1>
 {{-- sebelum login --}}
  @guest
     <ol>
@@ -28,3 +28,4 @@
         <button type="submit">Logout</button>
     </form>
 @endauth
+
