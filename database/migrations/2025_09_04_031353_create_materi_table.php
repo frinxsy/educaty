@@ -15,7 +15,7 @@ return new class extends Migration
         $table->bigIncrements('id_materi');
         $table->string('judul');
         $table->text('kategori');
-        $table->text('file_materi');
+        $table->text('file_materi'); //path file materi
         $table->timestamps();
         });
     }
