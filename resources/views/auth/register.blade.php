@@ -10,7 +10,6 @@
 <body class="bg-gray-100">
     <div class="max-w-md mx-auto mt-10 p-6 bg-white rounded-lg shadow">
         <h1 class="text-2xl font-bold mb-4">Form Registrasi</h1>
-        <form action="{{ url('/register') }}" method="POST" class="space-y-4">
             @csrf
             <input type="text" name="name" placeholder="Nama" class="w-full border p-2 rounded">
             <input type="email" name="email" placeholder="Email" class="w-full border p-2 rounded">
