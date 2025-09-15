@@ -9,42 +9,7 @@
 <body class="font-sans bg-white">
 
 <!-- Navbar -->
-<header class="flex justify-between items-center px-8 py-4  shadow-sm bg-blue-500">
-    <!-- logo -->
-    <div class="flex items-center space-x-2">
-        <img src="logo.png" alt="Logo" class="w-8 h-8">
-        <span class="font-bold text-lg text-white">Educaty</span>
-    </div>
-
-    <!-- menu -->
-    <nav>
-    <ul class="hidden md:flex space-x-6 font-medium text-white b">
-        <li><a href="/" class="hover:text-yellow-400">Home</a></li>
-        <li><a href="/about" class="hover:text-yellow-400">About Us</a></li>
-        <li><a href="/fasilitas" class="hover:text-yellow-400">Fasilitas</a></li>
-        <li><a href="/materi" class="hover:text-yellow-400">Materi</a></li>
-        <li><a href="/help" class="hover:text-yellow-400">Help</a></li>
-    </ul>
-    </nav>
-
-    <!-- tombol auth -->
-    @guest
-    <div class="flex space-x-3">
-        <a href="/login" class="px-4 py-2 rounded-full text-sm font-medium bg-transparent border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition">Sign in</a>
-        <a href="/register" class="px-4 py-2 rounded-full text-sm font-medium bg-blue-500 text-white hover:bg-blue-600 transition">Register</a>
-    </div>
-    @endguest
-
-    @auth
-    <div class="flex items-center space-x-3">
-        <p class="text-white">Welcome, {{ Auth::user()->name }}!</p>
-        <form action="{{ url('/logout') }}" method="POST">
-        @csrf
-        <button type="submit" class="px-4 py-2 rounded-full bg-red-500 text-white hover:bg-red-600 text-sm">Logout</button>
-    </form>
-    </div>
-    @endauth
-</header>
+<x-navbar />
 
 <!-- Hero Section -->
 <section class="relative overflow-hidden px-8 md:px-16 py-16 grid md:grid-cols-2 items-center gap-12">
@@ -87,41 +52,7 @@
 </section>
 
 <!-- Footer -->
-<footer class="bg-blue-600 text-white py-12 px-8 md:px-16">
-    <div class="grid md:grid-cols-4 gap-8">
-    <!-- Logo -->
-    <div>
-        <div class="flex items-center space-x-2 mb-4">
-            <img src="logo.png" alt="Logo" class="w-10 h-10">
-            <span class="font-bold text-lg">EDUCATY</span>
-        </div>
-    </div>
-    <!-- Contact -->
-    <div>
-        <h3 class="font-semibold mb-2">Contact</h3>
-        <p>Phone : +62 8123456789</p>
-        <p>Email : Educaty@gmail.com</p>
-    </div>
-    <!-- Info -->
-    <div>
-        <h3 class="font-semibold mb-2">Information</h3>
-        <ul class="space-y-1">
-            <li><a href="#" class="hover:underline">Press Centre</a></li>
-            <li><a href="#" class="hover:underline">Our Blog</a></li>
-            <li><a href="#" class="hover:underline">Term and Condition</a></li>
-        </ul>
-    </div>
-    <!-- Menu -->
-    <div>
-        <h3 class="font-semibold mb-2">Menu</h3>
-        <ul class="space-y-1">
-            <li><a href="/about" class="hover:underline">About</a></li>
-            <li><a href="#" class="hover:underline">Menu</a></li>
-            <li><a href="#" class="hover:underline">Services</a></li>
-        </ul>
-    </div>
-    </div>
-</footer>
+<x-footer />
 
 </body>
 </html>

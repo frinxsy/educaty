@@ -66,6 +66,11 @@ class AuthController extends Controller
         return redirect('/')->with('success', 'Berhasil logout!');
     }
 
+    public function home()
+    {
+        return view('home');
+    }
+
     public function about()
     {
         return view('about');
