@@ -34,5 +34,24 @@ class AuthController extends Controller
         // redirect dengan pesan sukses
         return redirect()->route('register')->with('success', 'Akun berhasil dibuat!');
     }
+
+    public function showLoginForm()
+    {
+        return view('auth.login');
+    }
+    public function about()
+    {
+        return view('about');
+    }
+
+    public function fasilitas()
+    {
+        return view('fasilitas');
+    }
+
+    public function materi()
+    {
+        return view('materi');
+    }
 }
 
