@@ -37,7 +37,7 @@
     <!-- Bagian Kiri -->
     <div class="text-white flex flex-col items-center md:items-start space-y-6">
     <div class="flex items-center space-x-2">
-        <img src="logo.png" alt="Logo" class="w-12 h-12">
+        <img src="/images/logo.png" alt="Logo" class="w-12 h-12">
         <h1 class="text-2xl font-bold">Educaty</h1>
     </div>
     <p class="text-lg md:text-xl font-medium">Educaty, teman setia raih prestasi!</p>
@@ -52,7 +52,7 @@
         </h2>
 
         <!-- form register -->
-        <form action="{{ url('/register') }}" method="POST" class="space-y-4">
+        <form action="{{ url('/signup') }}" method="POST" class="space-y-4">
         @csrf
 
         <!-- tambahan label -->

@@ -8,9 +8,9 @@
 	<div class="absolute bottom-0 left-1/3 w-16 h-16 bg-blue-400 rounded-full -z-10 opacity-80"></div>
 	<div class="absolute bottom-10 right-10 w-32 h-32 bg-yellow-300 rounded-full -z-10 opacity-80"></div>
 
-	<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+	<div class="grid grid-cols-1 md:grid-cols-2 gap-8 z-10">
 		<div>
-			<h1 class="text-5xl font-extrabold mb-4 text-black">About Us</h1>
+			<h1 class="text-5xl font-extrabold mb-4  text-black">About Us</h1>
 			<p class="mb-2 text-gray-700 text-lg leading-relaxed">
 				<span class="text-yellow-500 font-semibold">Selamat datang di Educaty</span>, rumah belajar yang dirancang untuk <span class="text-blue-500">membantu</span> setiap siswa mencapai potensi terbaiknya. Kami <span class="text-blue-500">percaya bahwa</span> setiap anak memiliki cara belajar yang unik, dan <span class="text-blue-500">tugas kami</span> adalah menemani, membimbing, serta menginspirasi mereka untuk terus berkembang.
 			</p>

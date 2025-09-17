@@ -39,7 +39,7 @@
     <div class="text-white flex flex-col items-center md:items-start space-y-6">
         <!-- logo -->
         <div class="flex items-center space-x-2">
-        <img src="logo.png" alt="Logo" class="w-12 h-12">
+        <img src="/images/logo.png" alt="Logo" class="w-12 h-12">
         <h1 class="text-2xl font-bold">Educaty</h1>
         </div>
         <!-- tagline -->
@@ -91,7 +91,7 @@
 
         <!-- link daftar -->
         <p class="text-center text-sm text-gray-600 mt-6">
-            Belum punya akun? <a href="/register" class="text-blue-500 hover:underline">Daftar</a>
+            Belum punya akun? <a href="/signup" class="text-blue-500 hover:underline">Daftar</a>
         </p>
         </div>
     </div>

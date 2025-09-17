@@ -19,11 +19,26 @@
             <li>
                 <a href="/help" class="transition-colors duration-200 font-medium {{ Request::is('help') ? 'underline underline-offset-4 text-yellow-400' : 'text-white hover:text-yellow-400' }}">Help</a>
             </li>
+            @guest
             <li>
-                <a href="/signup" class="transition-colors duration-200 font-medium {{ Request::is('signup') ? 'underline underline-offset-4 text-yellow-400' : 'text-white hover:text-yellow-400' }}">Sign up</a>
+                <a href="/login" class="transition-colors duration-200 font-medium {{ Request::is('signup') ? 'underline underline-offset-4 text-yellow-400' : 'text-white hover:text-yellow-400' }}">Sign In</a>
             </li>
             <li>
-                <a href="/register" class="bg-blue-500 px-4 py-1 rounded-full text-white font-semibold shadow hover:bg-yellow-400 hover:text-blue-700 transition-colors duration-200 {{ Request::is('register') ? 'underline underline-offset-4' : '' }}">Register</a>
+                <a href="/signup" class="bg-blue-500 px-4 py-1 rounded-full text-white font-semibold shadow hover:bg-yellow-400 hover:text-blue-700 transition-colors duration-200 {{ Request::is('register') ? 'underline underline-offset-4' : '' }}">Sign Up</a>
             </li>
+            @endguest
+            @auth
+            <li>
+                <div class="flex items-center space-x-3">
+                    <p class="text-white">Welcome, {{ Auth::user()->name }}!</p>
+                    <form action="{{ url('/logout') }}" method="POST">
+                        @csrf
+                        <button type="submit" class="px-4 py-2 rounded-full bg-red-500 text-white hover:bg-red-600 text-sm">Logout</button>
+                    </form>
+                </div>
+            </li>
+
+            @endauth
+
         </ul>
     </nav>
