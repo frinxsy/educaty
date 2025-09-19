@@ -32,4 +32,4 @@
             @endauth
 
         </ul>
-    </nav>
+</nav>

@@ -7,6 +7,9 @@
     <label>Judul:</label>
     <input type="text" name="judul"><br><br>
 
+    <label>Kategori:</label>
+    <input type="text" name="kategori"><br><br>
+
     <label>Pilih Video:</label>
     <input type="file" name="video"><br><br>
 

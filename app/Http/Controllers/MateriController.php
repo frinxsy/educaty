@@ -43,5 +43,10 @@ class MateriController extends Controller
         ]);
     }
 
+    public function show()
+    {
+        $video = Materi::all();
+        return view('uploadvideotest', compact('video'));
+    }
 
 }

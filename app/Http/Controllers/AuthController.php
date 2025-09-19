@@ -68,7 +68,7 @@ class AuthController extends Controller
 
     public function home()
     {
-        return view('home');
+        return view('home', ['page' => 'Home']);
     }
 
     public function about()
