@@ -27,9 +27,9 @@
             </div>
             <div>
                 <h3 class="font-semibold mb-2 text-white">Menu</h3>
-                <p>About</p>
-                <p>Menu</p>
-                <p>Services</p>
+                <a href="/about" class="hover:underline block">About</a>
+                <a href="/fasilitas" class="hover:underline block">Fasilitas</a>
+                <a href="/materi" class="hover:underline block">Materi</a>
             </div>
         </div>
     </footer>

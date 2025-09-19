@@ -27,7 +27,7 @@
             Kursus kami yang dipandu oleh para ahli memberikan pengetahuan mendalam, memastikan Anda menguasai bidang minat Anda sambil beradaptasi dengan perkembangan dunia saat ini. Bergabunglah dengan komunitas pembelajaran dan mentor yang berdedikasi.
         </p>
     <div class="flex space-x-4">
-        <a href="#" class="px-6 py-3 bg-yellow-400 text-black rounded-full font-semibold hover:bg-yellow-500 transition">Join Now!</a>
+        <a href="/joinnow" class="px-6 py-3 bg-yellow-400 text-black rounded-full font-semibold hover:bg-yellow-500 transition">Join Now!</a>
         <a href="#" class="flex items-center space-x-2 text-blue-600 font-medium hover:underline">
         <span>Learn More</span>
         </a>
@@ -42,10 +42,10 @@
 
         <!-- foto -->
         <div class="flex flex-col space-y-4 items-center">
-            <img src="student1.jpg" alt="Student" class="rounded-full w-48 h-48 object-cover shadow-lg">
+            <img src="/images/rectangle 6.png" alt="Student" class="rounded-full w-48 h-48 object-cover shadow-lg">
             <div class="flex space-x-4">
-                <img src="student2.jpg" alt="Student" class="rounded-full w-32 h-32 object-cover shadow-lg">
-                <img src="student3.jpg" alt="Student" class="rounded-full w-32 h-32 object-cover shadow-lg">
+                <img src="/images/rectangle 4.png" alt="Student" class="rounded-full w-32 h-32 object-cover shadow-lg">
+                <img src="/images/rectangle 5.png" alt="Student" class="rounded-full w-32 h-32 object-cover shadow-lg">
             </div>
         </div>
     </div>

@@ -85,6 +85,16 @@ class AuthController extends Controller
     {
         return view('materi');
     }
+
+    public function joinnow()
+    {
+        return view('joinnow');
+    }
+
+    public function berhasildaftar()
+    {
+        return view('berhasildaftar');
+    }
 }
 
 
