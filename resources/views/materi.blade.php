@@ -15,25 +15,33 @@
         <div class="flex flex-col items-center">
             <img src="/images/matematika.png" alt="Matematika" class="w-full max-w-md rounded-t-xl">
             <div class="bg-gray-700 w-full py-2 rounded-b-xl text-center">
-                <a href="/materi-isi"><span class="text-white font-bold text-lg tracking-wide">MATEMATIKA</span></a>
+                <a href="{{route('materi_isi', ['kategori' => 'Matematika'])}}">
+                    <span class="text-white font-bold text-lg tracking-wide">MATEMATIKA</span>
+                </a>
             </div>
         </div>
         <div class="flex flex-col items-center">
             <img src="/images/bing.png" alt="B.Inggris" class="w-full max-w-md rounded-t-xl">
             <div class="bg-gray-700 w-full py-2 rounded-b-xl text-center">
-                <span class="text-white font-bold text-lg tracking-wide">B.INGGRIS</span>
+                <a href="{{route('materi_isi', ['kategori' => 'B.Inggris'])}}">
+                    <span class="text-white font-bold text-lg tracking-wide">B.INGGRIS</span>
+                </a>
             </div>
         </div>
         <div class="flex flex-col items-center">
             <img src="/images/bindo.png" alt="B.Indonesia" class="w-full max-w-md rounded-t-xl">
             <div class="bg-gray-700 w-full py-2 rounded-b-xl text-center">
-                <span class="text-white font-bold text-lg tracking-wide">B.INDONESIA</span>
+                <a href="{{route('materi_isi', ['kategori' => 'B.Indonesia'])}}">
+                    <span class="text-white font-bold text-lg tracking-wide">B.INDONESIA</span>
+                </a>
             </div>
         </div>
         <div class="flex flex-col items-center">
             <img src="/images/rpl.png" alt="Rekayasa Perangkat Lunak" class="w-full max-w-md rounded-t-xl">
             <div class="bg-gray-700 w-full py-2 rounded-b-xl text-center">
-                <span class="text-white font-bold text-lg tracking-wide">REKAYASA PERANGKAT LUNAK</span>
+                <a href="{{route('materi_isi', ['kategori' => 'RPL'])}}">
+                    <span class="text-white font-bold text-lg tracking-wide">REKAYASA PERANGKAT LUNAK</span>
+                </a>
             </div>
         </div>
     </div>
