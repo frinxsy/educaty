@@ -25,7 +25,7 @@ class DatabaseSeeder extends Seeder
 
         Materi::factory()->create([
             'judul' => 'Simple Past',
-            'kategori' => 'B. Inggris',
+            'kategori' => 'B.Inggris',
             'file_materi' => 'video/simple-present.mp4'
         ]);
         // // Materi::factory()->create([
