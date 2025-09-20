@@ -26,7 +26,7 @@ class DatabaseSeeder extends Seeder
         Materi::factory()->create([
             'judul' => 'Simple Past',
             'kategori' => 'B.Inggris',
-            'file_materi' => 'video/simple-present.mp4'
+            'file_materi' => 'video/simple-present.mp4' 
         ]);
         // // Materi::factory()->create([
         // //     'judul' => 'Polinomial',
