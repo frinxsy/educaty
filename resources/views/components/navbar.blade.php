@@ -17,6 +17,9 @@
                 <a href="/materi" class="transition-colors duration-200 font-medium {{ Request::is('materi') ? 'underline underline-offset-4 text-yellow-400' : 'text-white hover:text-yellow-400' }}">Materi</a>
             </li>
             @guest
+            <li>
+                <a href="/login" class="transition-colors duration-200 font-medium {{ Request::is('signup') ? 'underline underline-offset-4 text-yellow-400' : 'text-white hover:text-yellow-400' }}">Sign In</a>
+            </li>
             @endguest
             @auth
             <li>
@@ -28,7 +31,6 @@
                     </form>
                 </div>
             </li>
-
             @endauth
 
         </ul>

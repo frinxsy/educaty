@@ -12,7 +12,7 @@ class AuthController extends Controller
     // tampilkan form registrasi
     public function showRegisterForm()
     {
-        return view('auth.register');
+        return view('joinnow');
     }
 
     // proses registrasi
@@ -33,7 +33,7 @@ class AuthController extends Controller
         ]);
 
         // redirect dengan pesan sukses
-        return redirect()->route('login')->with('success', 'Akun berhasil dibuat!');
+        return redirect()->route('berhasil-daftar')->with('success', 'Akun berhasil dibuat!');
     }
 
     public function showLoginForm()
